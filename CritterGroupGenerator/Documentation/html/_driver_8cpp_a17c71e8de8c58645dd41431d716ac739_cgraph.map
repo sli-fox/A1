@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_critter_factory.html#a983fedc85e591f4b9fdebcf2b73853c8" title="Factory method for Critter class. " alt="" coords="113,5,293,32"/>
+<area shape="rect" id="node3" href="$class_critter_wave.html#a3c6dcf79b57cb7e208471c5bc387f22d" title="Adding a Critter to the wave. " alt="" coords="126,56,279,83"/>
+<area shape="rect" id="node4" href="$class_critter_wave.html#a022f1d4bf44e35401a99e70ccd31dd87" title="Set starting position of Critters in wave. " alt="" coords="104,107,301,133"/>
+<area shape="rect" id="node5" href="$class_critter_wave.html#a1244e59ebd702edd2530e6256779ace0" title="Returns a reference to a Critter in the map. " alt="" coords="355,132,507,159"/>
+<area shape="rect" id="node6" href="$class_critter.html#a51bd0c313d265926c561517783f4b598" title="Critter::getPosition" alt="" coords="137,208,268,235"/>
+<area shape="rect" id="node7" href="$class_critter.html#acda941387ac28fc3e7e4ce92a864997e" title="Picks the next path cell to go to. " alt="" coords="111,259,294,285"/>
+<area shape="rect" id="node9" href="$class_critter.html#a18a43eb5bca5c6bd0113eca15723c625" title="Critter::getStealStrength" alt="" coords="349,309,512,336"/>
+<area shape="rect" id="node10" href="$class_map.html#a0a7e6088ebbdc4fa9b82896841933014" title="Set a scenery cell to a tower cell. " alt="" coords="143,360,263,387"/>
+<area shape="rect" id="node11" href="$class_critter.html#a1e98c05f5a41102cc37eb7a4396b90cf" title="Critter::getHitPoints" alt="" coords="363,411,499,437"/>
+<area shape="rect" id="node12" href="$class_critter.html#a963ccea758c0b04129a372572704c1fc" title="Handles the damage taken by a Critter in range of a Tower. " alt="" coords="133,461,272,488"/>
+<area shape="rect" id="node14" href="$class_critter_wave.html#aa7761b522b8774ef9b319861ae6ab844" title="Remove a critter from the CritterWave map. " alt="" coords="116,512,289,539"/>
+<area shape="rect" id="node8" href="$class_player.html#a0a01dc7b78794fba8f38815f0e159a3a" title="Player::removeCoins" alt="" coords="360,259,501,285"/>
+<area shape="rect" id="node13" href="$class_critter.html#a3d18092d84c66b53adfbc480c3ce1b42" title="Critter::removeHitPoints" alt="" coords="351,461,510,488"/>
+</map>

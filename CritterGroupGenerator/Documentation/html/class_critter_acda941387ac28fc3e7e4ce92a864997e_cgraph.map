@@ -1,0 +1,4 @@
+<map id="Critter::chooseNextPathCell" name="Critter::chooseNextPathCell">
+<area shape="rect" id="node2" href="$class_player.html#a0a01dc7b78794fba8f38815f0e159a3a" title="Player::removeCoins" alt="" coords="247,5,388,32"/>
+<area shape="rect" id="node3" href="$class_critter.html#a18a43eb5bca5c6bd0113eca15723c625" title="Critter::getStealStrength" alt="" coords="236,56,399,83"/>
+</map>

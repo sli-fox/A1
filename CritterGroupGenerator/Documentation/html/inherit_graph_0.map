@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_critter.html" title="Abstract base class of all Critters Critter defines the attributes, accessors, and update function fo..." alt="" coords="5,81,63,108"/>
+<area shape="rect" id="node2" href="$class_cat.html" title="Class for Cat. Subclass of Critter. " alt="" coords="127,5,169,32"/>
+<area shape="rect" id="node3" href="$class_dog.html" title="Class for Dog. Subclass of Critter. " alt="" coords="125,56,171,83"/>
+<area shape="rect" id="node4" href="$class_werecat.html" title="Class for Werecat. Subclass of Critter. " alt="" coords="113,107,183,133"/>
+<area shape="rect" id="node5" href="$class_werewolf.html" title="Class for Werewolf. Subclass of Critter. " alt="" coords="111,157,185,184"/>
+</map>

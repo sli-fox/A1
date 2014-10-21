@@ -1,0 +1,6 @@
+<map id="Critter" name="Critter">
+<area shape="rect" id="node2" href="$class_cat.html" title="Class for Cat. Subclass of Critter. " alt="" coords="5,409,125,516"/>
+<area shape="rect" id="node3" href="$class_dog.html" title="Class for Dog. Subclass of Critter. " alt="" coords="149,409,269,516"/>
+<area shape="rect" id="node4" href="$class_werecat.html" title="Class for Werecat. Subclass of Critter. " alt="" coords="293,409,413,516"/>
+<area shape="rect" id="node5" href="$class_werewolf.html" title="Class for Werewolf. Subclass of Critter. " alt="" coords="437,409,557,516"/>
+</map>

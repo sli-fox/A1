@@ -1,0 +1,9 @@
+<map id="COMP345/Assignment1_noGUI/CritterGroupGenerator/CritterGroupGenerator/include/CritterFactory.h" name="COMP345/Assignment1_noGUI/CritterGroupGenerator/CritterGroupGenerator/include/CritterFactory.h">
+<area shape="rect" id="node2" href="$_critter_8h.html" title="Representation of critter object. " alt="" coords="95,199,163,225"/>
+<area shape="rect" id="node7" href="$_cat_8h.html" title="Representation of Cat object. " alt="" coords="24,124,77,151"/>
+<area shape="rect" id="node8" href="$_dog_8h.html" title="Representation of Dog object. " alt="" coords="101,124,157,151"/>
+<area shape="rect" id="node9" href="$_werecat_8h.html" title="Representation of Werecat object. " alt="" coords="181,124,264,151"/>
+<area shape="rect" id="node10" href="$_werewolf_8h.html" title="Representation of Werewolf object. " alt="" coords="288,124,375,151"/>
+<area shape="rect" id="node5" href="$_map_8h.html" title="Representation of Map object. " alt="" coords="56,273,114,300"/>
+<area shape="rect" id="node6" href="$_player_8h.html" title="Representation of Player object. " alt="" coords="139,273,210,300"/>
+</map>

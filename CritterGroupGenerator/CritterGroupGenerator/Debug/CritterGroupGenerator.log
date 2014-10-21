@@ -1,0 +1,30 @@
+﻿Build started 10/20/14 6:28:45 PM.
+     1>Project "C:\Users\Steph\Projects\COMP345\Assignment1_noGUI\CritterGroupGenerator\CritterGroupGenerator\CritterGroupGenerator.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../CritterGroupGenerator/include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\Driver.cpp src\gameObjects\Cat.cpp src\gameObjects\Critter.cpp src\gameObjects\CritterFactory.cpp src\gameObjects\CritterWave.cpp src\gameObjects\Dog.cpp src\gameObjects\Werecat.cpp src\gameObjects\Werewolf.cpp
+         Critter.cpp
+         Driver.cpp
+         Generating Code...
+         Compiling...
+         Werewolf.cpp
+         Werecat.cpp
+         Dog.cpp
+         CritterWave.cpp
+         CritterFactory.cpp
+         Cat.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Steph\Projects\COMP345\Assignment1_noGUI\CritterGroupGenerator\Debug\CritterGroupGenerator.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Steph\Projects\COMP345\Assignment1_noGUI\CritterGroupGenerator\Debug\CritterGroupGenerator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Steph\Projects\COMP345\Assignment1_noGUI\CritterGroupGenerator\Debug\CritterGroupGenerator.lib" /MACHINE:X86 Debug\Critter.obj
+         Debug\CritterFactory.obj
+         Debug\Cat.obj
+         Debug\Driver.obj
+         Debug\CritterWave.obj
+         Debug\Dog.obj
+         Debug\Werecat.obj
+         Debug\Werewolf.obj
+         CritterGroupGenerator.vcxproj -> C:\Users\Steph\Projects\COMP345\Assignment1_noGUI\CritterGroupGenerator\Debug\CritterGroupGenerator.exe
+     1>Done Building Project "C:\Users\Steph\Projects\COMP345\Assignment1_noGUI\CritterGroupGenerator\CritterGroupGenerator\CritterGroupGenerator.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.52

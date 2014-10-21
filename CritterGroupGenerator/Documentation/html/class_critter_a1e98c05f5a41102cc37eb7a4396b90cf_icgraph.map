@@ -1,0 +1,4 @@
+<map id="Critter::getHitPoints" name="Critter::getHitPoints">
+<area shape="rect" id="node2" href="$_driver_8cpp.html#a17c71e8de8c58645dd41431d716ac739" title="main" alt="" coords="376,5,427,32"/>
+<area shape="rect" id="node3" href="$class_critter.html#a963ccea758c0b04129a372572704c1fc" title="Handles the damage taken by a Critter in range of a Tower. " alt="" coords="189,31,328,57"/>
+</map>

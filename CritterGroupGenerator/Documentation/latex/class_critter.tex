@@ -1,0 +1,411 @@
+\hypertarget{class_critter}{\section{Critter Class Reference}
+\label{class_critter}\index{Critter@{Critter}}
+}
+
+
+Abstract base class of all Critters \hyperlink{class_critter}{Critter} defines the attributes, accessors, and update function for its subclass instances.  
+
+
+
+
+{\ttfamily \#include $<$Critter.\+h$>$}
+
+
+
+Inheritance diagram for Critter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_critter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Critter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_critter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_critter_a05aa21e3b570d7380f3ead47c99442ef}{Critter} ()
+\item 
+virtual \hyperlink{class_critter_aa923c19cdc302c7bf10a038983e801c1}{$\sim$\+Critter} ()
+\item 
+int \hyperlink{class_critter_a1e98c05f5a41102cc37eb7a4396b90cf}{get\+Hit\+Points} () const 
+\item 
+void \hyperlink{class_critter_a3d18092d84c66b53adfbc480c3ce1b42}{remove\+Hit\+Points} (int points)
+\item 
+int \hyperlink{class_critter_a18a43eb5bca5c6bd0113eca15723c625}{get\+Steal\+Strength} () const 
+\item 
+int \hyperlink{class_critter_a7db2281b14479a1c931716c07acbc7da}{get\+Player\+Reward} () const 
+\item 
+float \hyperlink{class_critter_a3785ffa05cec86b30264fbdbf613e4f8}{get\+Speed} () const 
+\item 
+int \hyperlink{class_critter_aebbb372bdcd3a709428445554c3d24c9}{get\+Level} () const 
+\item 
+std\+::string \hyperlink{class_critter_a47b5b7e7544429f5913605bedbfb9a63}{get\+Type} () const 
+\item 
+std\+::string \hyperlink{class_critter_a51bd0c313d265926c561517783f4b598}{get\+Position} () const 
+\item 
+void \hyperlink{class_critter_acda941387ac28fc3e7e4ce92a864997e}{choose\+Next\+Path\+Cell} (\hyperlink{class_map}{Map} \&map, int current\+\_\+row, int current\+\_\+col, \hyperlink{class_player}{Player} \&player)
+\begin{DoxyCompactList}\small\item\em Picks the next path cell to go to. \end{DoxyCompactList}\item 
+void \hyperlink{class_critter_a963ccea758c0b04129a372572704c1fc}{take\+Damage} (int damage)
+\begin{DoxyCompactList}\small\item\em Handles the damage taken by a \hyperlink{class_critter}{Critter} in range of a Tower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_critter_aec02dae27ba8081064ac2b035eaf82cf}{row}
+\item 
+int \hyperlink{class_critter_a22fc3dd912a58aafc3aa7f118f1f2440}{col}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_critter_ab903f6d28ef3fc70808390fef8816b79}{initialize\+Critter} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtualized initialization function for \hyperlink{class_critter}{Critter}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_critter_a0228568729f86823591b390f53ad5ebc}{critter\+\_\+type}
+\begin{DoxyCompactList}\small\item\em Type of the \hyperlink{class_critter}{Critter}. \end{DoxyCompactList}\item 
+int \hyperlink{class_critter_a916038a11e8443ea403a644e91fc791e}{hit\+\_\+points}
+\begin{DoxyCompactList}\small\item\em Health of the \hyperlink{class_critter}{Critter}. \end{DoxyCompactList}\item 
+int \hyperlink{class_critter_a60f7c436aec1f6a63d4fb5af57eb8eef}{steal\+\_\+strength}
+\begin{DoxyCompactList}\small\item\em Rate at which the critter can steal coins from the player. \end{DoxyCompactList}\item 
+int \hyperlink{class_critter_a2a17f7366fbde83714742e66ba3e63a7}{player\+\_\+reward}
+\begin{DoxyCompactList}\small\item\em Coin reward for the player when the \hyperlink{class_critter}{Critter} is killed. \end{DoxyCompactList}\item 
+float \hyperlink{class_critter_adde7d84a0dd9ac8f5dc144464928638f}{speed}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_critter}{Critter} movement speed. \end{DoxyCompactList}\item 
+int \hyperlink{class_critter_a9f9a6408a55212036f317710dc3da410}{level}
+\begin{DoxyCompactList}\small\item\em Difficulty level as part of a wave. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_critter_aeed4299a358eceabb3abc2ba9ec83ef2}{operator$<$$<$} (std\+::ostream \&output, const \hyperlink{class_critter}{Critter} \&critter)
+\begin{DoxyCompactList}\small\item\em Overloaded cout operator to print out Critters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class of all Critters \hyperlink{class_critter}{Critter} defines the attributes, accessors, and update function for its subclass instances. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_critter_a05aa21e3b570d7380f3ead47c99442ef}{\index{Critter@{Critter}!Critter@{Critter}}
+\index{Critter@{Critter}!Critter@{Critter}}
+\subsubsection[{Critter}]{\setlength{\rightskip}{0pt plus 5cm}Critter\+::\+Critter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_critter_a05aa21e3b570d7380f3ead47c99442ef}
+\hypertarget{class_critter_aa923c19cdc302c7bf10a038983e801c1}{\index{Critter@{Critter}!````~Critter@{$\sim$\+Critter}}
+\index{````~Critter@{$\sim$\+Critter}!Critter@{Critter}}
+\subsubsection[{$\sim$\+Critter}]{\setlength{\rightskip}{0pt plus 5cm}virtual Critter\+::$\sim$\+Critter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_critter_aa923c19cdc302c7bf10a038983e801c1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_critter_acda941387ac28fc3e7e4ce92a864997e}{\index{Critter@{Critter}!choose\+Next\+Path\+Cell@{choose\+Next\+Path\+Cell}}
+\index{choose\+Next\+Path\+Cell@{choose\+Next\+Path\+Cell}!Critter@{Critter}}
+\subsubsection[{choose\+Next\+Path\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}void Critter\+::choose\+Next\+Path\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Map} \&}]{map, }
+\item[{int}]{current\+\_\+row, }
+\item[{int}]{current\+\_\+col, }
+\item[{{\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)}}\label{class_critter_acda941387ac28fc3e7e4ce92a864997e}
+
+
+Picks the next path cell to go to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \hyperlink{class_map}{Map} reference. \\
+\hline
+{\em current\+\_\+row} & Current row of \hyperlink{class_critter}{Critter} position. \\
+\hline
+{\em current\+\_\+col} & Current column of \hyperlink{class_critter}{Critter} position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void.
+\end{DoxyReturn}
+This function goes through every cell in the map, looking for the next path or exit cell. The search begins at the critter's current position, which is passed in. If the next path cell is found, the \hyperlink{class_critter}{Critter}'s position (row and column) is updated to that cell. If the the exit is reached, the critter steals coins from the player. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_critter_acda941387ac28fc3e7e4ce92a864997e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_critter_acda941387ac28fc3e7e4ce92a864997e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_critter_a1e98c05f5a41102cc37eb7a4396b90cf}{\index{Critter@{Critter}!get\+Hit\+Points@{get\+Hit\+Points}}
+\index{get\+Hit\+Points@{get\+Hit\+Points}!Critter@{Critter}}
+\subsubsection[{get\+Hit\+Points}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::get\+Hit\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_a1e98c05f5a41102cc37eb7a4396b90cf}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_critter_a1e98c05f5a41102cc37eb7a4396b90cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_critter_aebbb372bdcd3a709428445554c3d24c9}{\index{Critter@{Critter}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!Critter@{Critter}}
+\subsubsection[{get\+Level}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::get\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_aebbb372bdcd3a709428445554c3d24c9}
+\hypertarget{class_critter_a7db2281b14479a1c931716c07acbc7da}{\index{Critter@{Critter}!get\+Player\+Reward@{get\+Player\+Reward}}
+\index{get\+Player\+Reward@{get\+Player\+Reward}!Critter@{Critter}}
+\subsubsection[{get\+Player\+Reward}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::get\+Player\+Reward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_a7db2281b14479a1c931716c07acbc7da}
+\hypertarget{class_critter_a51bd0c313d265926c561517783f4b598}{\index{Critter@{Critter}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Critter@{Critter}}
+\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Critter\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_a51bd0c313d265926c561517783f4b598}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_critter_a51bd0c313d265926c561517783f4b598_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_critter_a3785ffa05cec86b30264fbdbf613e4f8}{\index{Critter@{Critter}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Critter@{Critter}}
+\subsubsection[{get\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}float Critter\+::get\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_a3785ffa05cec86b30264fbdbf613e4f8}
+\hypertarget{class_critter_a18a43eb5bca5c6bd0113eca15723c625}{\index{Critter@{Critter}!get\+Steal\+Strength@{get\+Steal\+Strength}}
+\index{get\+Steal\+Strength@{get\+Steal\+Strength}!Critter@{Critter}}
+\subsubsection[{get\+Steal\+Strength}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::get\+Steal\+Strength (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_a18a43eb5bca5c6bd0113eca15723c625}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_critter_a18a43eb5bca5c6bd0113eca15723c625_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_critter_a47b5b7e7544429f5913605bedbfb9a63}{\index{Critter@{Critter}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Critter@{Critter}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Critter\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_critter_a47b5b7e7544429f5913605bedbfb9a63}
+\hypertarget{class_critter_ab903f6d28ef3fc70808390fef8816b79}{\index{Critter@{Critter}!initialize\+Critter@{initialize\+Critter}}
+\index{initialize\+Critter@{initialize\+Critter}!Critter@{Critter}}
+\subsubsection[{initialize\+Critter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Critter\+::initialize\+Critter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_critter_ab903f6d28ef3fc70808390fef8816b79}
+
+
+Pure virtualized initialization function for \hyperlink{class_critter}{Critter}. 
+
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_cat_a2bf5faec9a7399c19e6dceb9402a34d7}{Cat}, \hyperlink{class_dog_ab512ed7b74de6ab907e4199f98d82566}{Dog}, \hyperlink{class_werecat_ae3c16d3ee0d96cb7ad7126cc3ae088a0}{Werecat}, and \hyperlink{class_werewolf_afc8553cf4e3e33a609ca08c084d66ce0}{Werewolf}.
+
+\hypertarget{class_critter_a3d18092d84c66b53adfbc480c3ce1b42}{\index{Critter@{Critter}!remove\+Hit\+Points@{remove\+Hit\+Points}}
+\index{remove\+Hit\+Points@{remove\+Hit\+Points}!Critter@{Critter}}
+\subsubsection[{remove\+Hit\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void Critter\+::remove\+Hit\+Points (
+\begin{DoxyParamCaption}
+\item[{int}]{points}
+\end{DoxyParamCaption}
+)}}\label{class_critter_a3d18092d84c66b53adfbc480c3ce1b42}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_critter_a3d18092d84c66b53adfbc480c3ce1b42_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_critter_a963ccea758c0b04129a372572704c1fc}{\index{Critter@{Critter}!take\+Damage@{take\+Damage}}
+\index{take\+Damage@{take\+Damage}!Critter@{Critter}}
+\subsubsection[{take\+Damage}]{\setlength{\rightskip}{0pt plus 5cm}void Critter\+::take\+Damage (
+\begin{DoxyParamCaption}
+\item[{int}]{damage}
+\end{DoxyParamCaption}
+)}}\label{class_critter_a963ccea758c0b04129a372572704c1fc}
+
+
+Handles the damage taken by a \hyperlink{class_critter}{Critter} in range of a Tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & Int representing the amount of health lost per hit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_critter_a963ccea758c0b04129a372572704c1fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_critter_a963ccea758c0b04129a372572704c1fc_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_critter_aeed4299a358eceabb3abc2ba9ec83ef2}{\index{Critter@{Critter}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Critter@{Critter}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf Critter} \&}]{critter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_critter_aeed4299a358eceabb3abc2ba9ec83ef2}
+
+
+Overloaded cout operator to print out Critters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & Output stream address \\
+\hline
+{\em critter} & Const address to \hyperlink{class_critter}{Critter} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Address to output stream 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_critter_a22fc3dd912a58aafc3aa7f118f1f2440}{\index{Critter@{Critter}!col@{col}}
+\index{col@{col}!Critter@{Critter}}
+\subsubsection[{col}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::col}}\label{class_critter_a22fc3dd912a58aafc3aa7f118f1f2440}
+\hypertarget{class_critter_a0228568729f86823591b390f53ad5ebc}{\index{Critter@{Critter}!critter\+\_\+type@{critter\+\_\+type}}
+\index{critter\+\_\+type@{critter\+\_\+type}!Critter@{Critter}}
+\subsubsection[{critter\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Critter\+::critter\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_critter_a0228568729f86823591b390f53ad5ebc}
+
+
+Type of the \hyperlink{class_critter}{Critter}. 
+
+\hypertarget{class_critter_a916038a11e8443ea403a644e91fc791e}{\index{Critter@{Critter}!hit\+\_\+points@{hit\+\_\+points}}
+\index{hit\+\_\+points@{hit\+\_\+points}!Critter@{Critter}}
+\subsubsection[{hit\+\_\+points}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::hit\+\_\+points\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_critter_a916038a11e8443ea403a644e91fc791e}
+
+
+Health of the \hyperlink{class_critter}{Critter}. 
+
+\hypertarget{class_critter_a9f9a6408a55212036f317710dc3da410}{\index{Critter@{Critter}!level@{level}}
+\index{level@{level}!Critter@{Critter}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::level\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_critter_a9f9a6408a55212036f317710dc3da410}
+
+
+Difficulty level as part of a wave. 
+
+\hypertarget{class_critter_a2a17f7366fbde83714742e66ba3e63a7}{\index{Critter@{Critter}!player\+\_\+reward@{player\+\_\+reward}}
+\index{player\+\_\+reward@{player\+\_\+reward}!Critter@{Critter}}
+\subsubsection[{player\+\_\+reward}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::player\+\_\+reward\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_critter_a2a17f7366fbde83714742e66ba3e63a7}
+
+
+Coin reward for the player when the \hyperlink{class_critter}{Critter} is killed. 
+
+\hypertarget{class_critter_aec02dae27ba8081064ac2b035eaf82cf}{\index{Critter@{Critter}!row@{row}}
+\index{row@{row}!Critter@{Critter}}
+\subsubsection[{row}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::row}}\label{class_critter_aec02dae27ba8081064ac2b035eaf82cf}
+\hypertarget{class_critter_adde7d84a0dd9ac8f5dc144464928638f}{\index{Critter@{Critter}!speed@{speed}}
+\index{speed@{speed}!Critter@{Critter}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}float Critter\+::speed\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_critter_adde7d84a0dd9ac8f5dc144464928638f}
+
+
+\hyperlink{class_critter}{Critter} movement speed. 
+
+\hypertarget{class_critter_a60f7c436aec1f6a63d4fb5af57eb8eef}{\index{Critter@{Critter}!steal\+\_\+strength@{steal\+\_\+strength}}
+\index{steal\+\_\+strength@{steal\+\_\+strength}!Critter@{Critter}}
+\subsubsection[{steal\+\_\+strength}]{\setlength{\rightskip}{0pt plus 5cm}int Critter\+::steal\+\_\+strength\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_critter_a60f7c436aec1f6a63d4fb5af57eb8eef}
+
+
+Rate at which the critter can steal coins from the player. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+O\+M\+P345/\+Assignment1\+\_\+no\+G\+U\+I/\+Critter\+Group\+Generator/\+Critter\+Group\+Generator/include/\hyperlink{_critter_8h}{Critter.\+h}\item 
+C\+O\+M\+P345/\+Assignment1\+\_\+no\+G\+U\+I/\+Critter\+Group\+Generator/\+Critter\+Group\+Generator/src/game\+Objects/\hyperlink{_critter_8cpp}{Critter.\+cpp}\end{DoxyCompactItemize}

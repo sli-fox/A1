@@ -1,0 +1,4 @@
+<map id="Critter::takeDamage" name="Critter::takeDamage">
+<area shape="rect" id="node2" href="$class_critter.html#a1e98c05f5a41102cc37eb7a4396b90cf" title="Critter::getHitPoints" alt="" coords="203,5,339,32"/>
+<area shape="rect" id="node3" href="$class_critter.html#a3d18092d84c66b53adfbc480c3ce1b42" title="Critter::removeHitPoints" alt="" coords="192,56,351,83"/>
+</map>

@@ -1,0 +1,194 @@
+\hypertarget{class_map}{\section{Map Class Reference}
+\label{class_map}\index{Map@{Map}}
+}
+
+
+Class for \hyperlink{class_map}{Map}. Stub class of map for Critters.  
+
+
+
+
+{\ttfamily \#include $<$Map.\+h$>$}
+
+
+
+Collaboration diagram for Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_map__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_map_1_1_cell}{Cell}
+\begin{DoxyCompactList}\small\item\em Base struct for \hyperlink{struct_map_1_1_cell}{Cell} objects in a \hyperlink{class_map}{Map}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_map_1_1_exit_cell}{Exit\+Cell}
+\begin{DoxyCompactList}\small\item\em Derived from base struct \hyperlink{struct_map_1_1_cell}{Cell}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_map_1_1_path_cell}{Path\+Cell}
+\begin{DoxyCompactList}\small\item\em Derived from base struct \hyperlink{struct_map_1_1_cell}{Cell}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_map_1_1_scenery_cell}{Scenery\+Cell}
+\begin{DoxyCompactList}\small\item\em Derived from base struct \hyperlink{struct_map_1_1_cell}{Cell}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_map_1_1_start_cell}{Start\+Cell}
+\begin{DoxyCompactList}\small\item\em Derived from base struct \hyperlink{struct_map_1_1_cell}{Cell}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_map_1_1_tower_cell}{Tower\+Cell}
+\begin{DoxyCompactList}\small\item\em Derived from base struct \hyperlink{struct_map_1_1_cell}{Cell}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_map_a25b1781a19b5a600a92f0487b823b272}{Cell\+Type} \{ \\*
+\hyperlink{class_map_a25b1781a19b5a600a92f0487b823b272a887dcf135465781cd226cb80beeed332}{S\+C\+E\+N\+E\+R\+Y}, 
+\hyperlink{class_map_a25b1781a19b5a600a92f0487b823b272a85ec32a17e33d95e9196319cd62060b3}{P\+A\+T\+H}, 
+\hyperlink{class_map_a25b1781a19b5a600a92f0487b823b272a6a7572793842e84c9a4e94cfa9e417bb}{S\+T\+A\+R\+T}, 
+\hyperlink{class_map_a25b1781a19b5a600a92f0487b823b272a0947300fe39206c7e2f5174d50974ba0}{E\+X\+I\+T}, 
+\\*
+\hyperlink{class_map_a25b1781a19b5a600a92f0487b823b272a80b3934f045ce22b4394dbb4e55c5645}{T\+O\+W\+E\+R}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_map_a0f5ad0fd4563497b4214038cbca8b582}{Map} ()
+\item 
+\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{$\sim$\+Map} ()
+\item 
+void \hyperlink{class_map_a0a7e6088ebbdc4fa9b82896841933014}{place\+Tower} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Set a scenery cell to a tower cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_map_1_1_cell}{Map\+::\+Cell} \hyperlink{class_map_aa5d63b554ad19c18cdc9911536e42001}{map} \mbox{[}\hyperlink{class_map_a6f922edb15340e98aee860d269e50703}{map\+\_\+size}\mbox{]}\mbox{[}\hyperlink{class_map_a6f922edb15340e98aee860d269e50703}{map\+\_\+size}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 2\+D array representing the map grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_map_a6f922edb15340e98aee860d269e50703}{map\+\_\+size} = 5
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_map_aebdb7e7ad7d1b28f8e1b3a0b0917bb9c}{operator$<$$<$} (std\+::ostream \&output, const \hyperlink{class_map}{Map} \&\hyperlink{class_map_aa5d63b554ad19c18cdc9911536e42001}{map})
+\begin{DoxyCompactList}\small\item\em Overloaded cout operator to print out Maps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for \hyperlink{class_map}{Map}. Stub class of map for Critters. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_map_a25b1781a19b5a600a92f0487b823b272}{\index{Map@{Map}!Cell\+Type@{Cell\+Type}}
+\index{Cell\+Type@{Cell\+Type}!Map@{Map}}
+\subsubsection[{Cell\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Map\+::\+Cell\+Type}}}\label{class_map_a25b1781a19b5a600a92f0487b823b272}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+C\+E\+N\+E\+R\+Y@{S\+C\+E\+N\+E\+R\+Y}!Map@{Map}}\index{Map@{Map}!S\+C\+E\+N\+E\+R\+Y@{S\+C\+E\+N\+E\+R\+Y}}\item[{\em 
+\hypertarget{class_map_a25b1781a19b5a600a92f0487b823b272a887dcf135465781cd226cb80beeed332}{S\+C\+E\+N\+E\+R\+Y}\label{class_map_a25b1781a19b5a600a92f0487b823b272a887dcf135465781cd226cb80beeed332}
+}]\index{P\+A\+T\+H@{P\+A\+T\+H}!Map@{Map}}\index{Map@{Map}!P\+A\+T\+H@{P\+A\+T\+H}}\item[{\em 
+\hypertarget{class_map_a25b1781a19b5a600a92f0487b823b272a85ec32a17e33d95e9196319cd62060b3}{P\+A\+T\+H}\label{class_map_a25b1781a19b5a600a92f0487b823b272a85ec32a17e33d95e9196319cd62060b3}
+}]\index{S\+T\+A\+R\+T@{S\+T\+A\+R\+T}!Map@{Map}}\index{Map@{Map}!S\+T\+A\+R\+T@{S\+T\+A\+R\+T}}\item[{\em 
+\hypertarget{class_map_a25b1781a19b5a600a92f0487b823b272a6a7572793842e84c9a4e94cfa9e417bb}{S\+T\+A\+R\+T}\label{class_map_a25b1781a19b5a600a92f0487b823b272a6a7572793842e84c9a4e94cfa9e417bb}
+}]\index{E\+X\+I\+T@{E\+X\+I\+T}!Map@{Map}}\index{Map@{Map}!E\+X\+I\+T@{E\+X\+I\+T}}\item[{\em 
+\hypertarget{class_map_a25b1781a19b5a600a92f0487b823b272a0947300fe39206c7e2f5174d50974ba0}{E\+X\+I\+T}\label{class_map_a25b1781a19b5a600a92f0487b823b272a0947300fe39206c7e2f5174d50974ba0}
+}]\index{T\+O\+W\+E\+R@{T\+O\+W\+E\+R}!Map@{Map}}\index{Map@{Map}!T\+O\+W\+E\+R@{T\+O\+W\+E\+R}}\item[{\em 
+\hypertarget{class_map_a25b1781a19b5a600a92f0487b823b272a80b3934f045ce22b4394dbb4e55c5645}{T\+O\+W\+E\+R}\label{class_map_a25b1781a19b5a600a92f0487b823b272a80b3934f045ce22b4394dbb4e55c5645}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_map_a0f5ad0fd4563497b4214038cbca8b582}{\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection[{Map}]{\setlength{\rightskip}{0pt plus 5cm}Map\+::\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_map_a0f5ad0fd4563497b4214038cbca8b582}
+\hypertarget{class_map_aa403fbe09394ccf39747588f5168e3b2}{\index{Map@{Map}!````~Map@{$\sim$\+Map}}
+\index{````~Map@{$\sim$\+Map}!Map@{Map}}
+\subsubsection[{$\sim$\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Map\+::$\sim$\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_map_aa403fbe09394ccf39747588f5168e3b2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_map_a0a7e6088ebbdc4fa9b82896841933014}{\index{Map@{Map}!place\+Tower@{place\+Tower}}
+\index{place\+Tower@{place\+Tower}!Map@{Map}}
+\subsubsection[{place\+Tower}]{\setlength{\rightskip}{0pt plus 5cm}void Map\+::place\+Tower (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_map_a0a7e6088ebbdc4fa9b82896841933014}
+
+
+Set a scenery cell to a tower cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Row position of new tower. \\
+\hline
+{\em col} & Col position of new tower. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_map_a0a7e6088ebbdc4fa9b82896841933014_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_map_aebdb7e7ad7d1b28f8e1b3a0b0917bb9c}{\index{Map@{Map}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Map@{Map}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output, }
+\item[{const {\bf Map} \&}]{map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_map_aebdb7e7ad7d1b28f8e1b3a0b0917bb9c}
+
+
+Overloaded cout operator to print out Maps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & Output stream address \\
+\hline
+{\em critter} & Const address to \hyperlink{class_map}{Map} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Address to output stream 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_map_aa5d63b554ad19c18cdc9911536e42001}{\index{Map@{Map}!map@{map}}
+\index{map@{map}!Map@{Map}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map\+::\+Cell} Map\+::map\mbox{[}{\bf map\+\_\+size}\mbox{]}\mbox{[}{\bf map\+\_\+size}\mbox{]}}}\label{class_map_aa5d63b554ad19c18cdc9911536e42001}
+
+
+2\+D array representing the map grid. 
+
+\hypertarget{class_map_a6f922edb15340e98aee860d269e50703}{\index{Map@{Map}!map\+\_\+size@{map\+\_\+size}}
+\index{map\+\_\+size@{map\+\_\+size}!Map@{Map}}
+\subsubsection[{map\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}const int Map\+::map\+\_\+size = 5\hspace{0.3cm}{\ttfamily [static]}}}\label{class_map_a6f922edb15340e98aee860d269e50703}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+O\+M\+P345/\+Assignment1\+\_\+no\+G\+U\+I/\+Critter\+Group\+Generator/\+Critter\+Group\+Generator/include/\hyperlink{_map_8h}{Map.\+h}\end{DoxyCompactItemize}
